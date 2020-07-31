@@ -5,12 +5,13 @@
 #include <algorithm>
 #include <windows.h>
 
-std::string temat, nick;
-std::string tresc[5];
-std::string odpA[5], odpB[5], odpC[5], odpD[5];
-std::string poprawna[5];
-std::string odpowiedz;
 int punkty = 0;
+const int wielkoscQuizu = 6;
+std::string temat, nick;
+std::string tresc[wielkoscQuizu];
+std::string odpA[wielkoscQuizu], odpB[wielkoscQuizu], odpC[wielkoscQuizu], odpD[wielkoscQuizu];
+std::string poprawna[wielkoscQuizu];
+std::string odpowiedz;
 
 int main() {
     int nr_pytania = 0;
@@ -62,7 +63,7 @@ int main() {
 
     quiz.close();
 
-    for (int i = 0; i <= 4; i++) {
+    for (int i = 0; i <= wielkoscQuizu - 1; i++) {
         std::cout << std::endl << " Pytanie nr. " << i + 1 << " " << tresc[i] << std::endl;
         Sleep(2000);
         std::cout << " A. " << odpA[i] << std::endl;
@@ -76,7 +77,7 @@ int main() {
         transform(odpowiedz.begin(), odpowiedz.end(), odpowiedz.begin(), ::tolower);
 
         if (odpowiedz == poprawna[i]) {
-            std::cout << " Tak! To poprawna odpowiedz!" << std::endl;
+            std::cout << "Tak! To poprawna odpowiedz!" << std::endl;
             punkty++;
             Sleep(1500);
         } else {
@@ -87,6 +88,8 @@ int main() {
     }
 
     std::cout << std::endl << " Koniec! Udalo ci sie zebrac: " << punkty << " punktow." << std::endl;
+    std::cout << " Twoje statystyki quizu to: " << (punkty/wielkoscQuizu) * 100 << " % poprawnych odpowiedzi" << std::endl;
+    std::cout << " Twoje statystyki quizu to: " << 100 - ((punkty/wielkoscQuizu) * 100) << " % blednych odpowiedzi" << std::endl;
 
     getchar();
     return 0;
