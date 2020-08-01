@@ -1,5 +1,5 @@
 # QuizChallange
-Prosty program do tworzenia quizów napisany w cpp. Zadaniem było stworzenie w ciągu 40 minut quizu, który daje możliwość indywidualnej rozbudowy bazy pytań. Program czyta pytania z pliku 'quiz.txt'. W pierwszej linijce zamieszczamy treść pytania, w kolejnych czterech możliwe odpowiedzi, piąta linijka przechowuje poprawną odpowiedź.
+Prosty program do tworzenia quizów napisany w cpp. Zadaniem było stworzenie w krótkim czasie quizu, który daje możliwość indywidualnej rozbudowy bazy pytań. Program czyta pytania z pliku 'quiz.txt'. W pierwszej linijce zamieszczamy treść pytania, w kolejnych czterech możliwe odpowiedzi, piąta linijka przechowuje poprawną odpowiedź.
 
 <b>Typ zmiennych o nazwie float przechowuje:</b><br/>
 liczby calkowite<br/>
