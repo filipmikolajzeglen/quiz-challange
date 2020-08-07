@@ -1,11 +1,11 @@
 # QuizChallange
-EN/PL
+<b>EN/PL</b>
 
 A simple quiz maker written in cpp. The task was to create a quiz in a short time, which would allow for individual expansion of the database of questions. The program reads the questions from the file 'quiz.txt'. In the first line we present the content of the question, in the next four possible answers, the fifth line stores the correct answer.
 
 <b> The type of variables named float holds: </b> <br/>
 integers <br/>
-<br/> subtitles
+subtitles <br/> 
 floating point numbers <br/>
 single characters <br/>
 c
