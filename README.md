@@ -26,7 +26,7 @@ int x; <br/>
 integer x; <br/>
 x: integer; <br/>
 x = integer; <br/>
-and
+a
 
 <br/>
 
